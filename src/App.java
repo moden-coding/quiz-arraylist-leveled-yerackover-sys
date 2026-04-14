@@ -1,26 +1,26 @@
 /**
- * You are going to write code that is designed to store student ID numbers.
- * You will create an ArrayList for Integers, then accept user input to add values 
- * to that ArrayList. There will be additional modifications you can make:
- * 
- * B level:
- * Accept input from users, add values to an ArrayList
- * 
- * B+ level:
- * B level plus stop accepting input when the user enters -1. After this, the full
- * list of student numbers should be printed, one student ID per line.
- * 
- * A- level: 
- * Complete B and B+. Also do not allow duplicates. When the user enters a student ID 
- * that already exists, tell them they cannot add duplicates then continue accepting input 
- * as per B+ level.
- * 
- * A+ level:
- * Complete B and B+. Modify A- so that when a duplicate value is entered, the user is asked 
- * whether they want to delete the existing value. If they enter "yes", the value is removed
- * from the ArrayList. Ignore any other input and do not add the value to the ArrayList.
- * 
- * An A will be awarded for an attempt at A+ that is close but not complete.
+* You are going to write code to store a list of book titles for a 
+* classroom library. You will create an ArrayList for Strings, then accept user 
+* input to add titles to that ArrayList. There will be additional modifications 
+* you can make:
+
+* B Level:
+* Accept input from users and add book titles to the ArrayList.
+
+* B+ Level:
+* Accept titles from users and stop accepting input when the user enters "done". 
+* After this, the full list of titles should be printed, one title per line.
+
+* A- Level:
+* Complete B and B+. Additionally, do not allow duplicates. If the user enters a 
+* title that already exists, tell them that the title has already been entered, but 
+* continue accepting new titles.
+
+* A+ Level:
+* Complete B and B+. Modify A- so that when a duplicate title is entered, the user 
+* is asked whether they want to remove the existing title. If they enter "yes", the 
+* title is removed from the list. If they type anything else, the duplicate title is 
+* ignored, and no change is made to the list.
  */
 
 import java.util.*;
