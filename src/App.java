@@ -1,3 +1,4 @@
+
 /**
 * You are going to write code to store a list of book titles for a 
 * classroom library. You will create an ArrayList for Strings, then accept user 
@@ -24,8 +25,33 @@
  */
 
 import java.util.*;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        Scanner reader = new Scanner(System.in);
+
+        Scanner scanner = new Scanner(System.in);
+
+        ArrayList<String> books = new ArrayList<String>();
+        while (true) {
+            System.out.println("Give a book ");
+             String book = scanner.nextLine();
+            if (book.equals ("done")) {
+                break;
+            } 
+            if (books.contains(book)) {
+                System.out.println("Do you want to remove this from the list");
+                String answer = scanner.nextLine();
+                if (answer.equals ("yes")) {
+                    books.remove(book);
+                    
+                }
+            }
+            else {books.add(book);}
+            
+        }
+        System.out.println("Final List:");
+        for (String list:books){
+            System.out.println(list);
+        }
     }
 }
